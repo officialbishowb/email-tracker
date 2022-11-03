@@ -1,0 +1,63 @@
+:root{
+    --primary-color: #0582CA;
+    --bg-color: #051923;
+    --text-color: #ffffff;
+    --hover-color: #006494;
+}
+
+.container{
+    margin-top: 30vh;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    padding: 20px;
+     width: 600px;
+}
+@media screen and (max-width: 576px) {
+    .container{
+        width: 90%;
+    }
+}
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+.btn-custom{
+    height: 60px;
+    font-size: 1.3em;
+    background-color: var(--hover-color);
+    color: var(--text-color);
+    width: 100%;
+}
+.btn-custom:hover{
+    color: var(--text-color);
+    box-shadow: 0px 0px 1px 2px var(--hover-color);
+}
+input:focus{
+    box-shadow: 0px 0px 1px 2px var(--hover-color);
+
+}
+.text-loading{
+    color: var(--primary-color);
+    font-size: 1.3em;
+}
+#loading{
+    display: none;
+}
+
+.out{
+    width: 210px;
+    display: none;
+}
+#out_image{
+    padding: 10px;
+    border-radius: 2px;
+    border: 2px solid var(--primary-color);
+}
+.copy{
+    height: 40px;
+    font-size: .9em;
+}
+.tracking_btn{
+    font-size: .9em;
+}

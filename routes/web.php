@@ -16,3 +16,12 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('index');
 });
+
+
+
+// Validate the given API token
+
+Route::post('/api/validateToken',[\App\Http\Controllers\ApiController::class,'validateToken'])->name('tokenValidation');
+Route::post('/api/generateImgId',[\App\Http\Controllers\ApiController::class,'generateImageId'])->name('imageIdGen');
+Route::get('/image',[\App\Http\Controllers\ApiController::class,'viewImage'])->name('viewImage');
+Route::post('/api/startTracking',[\App\Http\Controllers\ApiController::class,'startTracking'])->name('startTracking');

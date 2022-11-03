@@ -1,0 +1,18 @@
+:root{
+    --primary-color: #0582CA;
+    --bg-color: #051923;
+    --text-color: #ffffff;
+    --hover-color: #006494;
+}
+
+.container{
+    border: 2px solid var(--primary-color);
+}
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: var(--bg-color);
+}
+.btn , .btn-gen{
+    background-color: var(--hover-color);
+    color: var(--text-color);
+}
