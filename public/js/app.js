@@ -100,7 +100,7 @@ function generateImgId(){
 function generateFinalImage(image_id){
     let hostName = location.hostname; 
     let image = `
-        <img src='http://${hostName}:8000/image?imageID=${image_id}' />
+        <img src='https://${hostName}/image?imageID=${image_id}' />
     `;
     
     $('#out_image').html(image);
