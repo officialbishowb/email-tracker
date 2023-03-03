@@ -64,7 +64,7 @@ class Api extends Model
                 return ['success'=>false,'message'=>"The given API token has expired!"];
             }
         }
-        return ['success'=>false,'message'=>"The given API token is invalid!"];;
+        return ['success'=>false,'message'=>"The given API token is invalid!"];
     }
 
     /**
